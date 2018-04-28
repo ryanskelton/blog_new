@@ -182,3 +182,6 @@ body {
         transform: scale(1);
     }
 }
+app-posts aside .img-responsive, app-search aside .img-responsive  {
+    min-height: 270px;
+}

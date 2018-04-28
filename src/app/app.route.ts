@@ -1,9 +1,10 @@
-import {Route} from '@angular/router';
-import {PostComponent} from './post/post.component';
-import {PostsComponent} from './posts/posts.component';
-import {UserComponent} from './user//user.component';
+import { Route } from '@angular/router';
+import { PostComponent } from './post/post.component';
+import { PostsComponent } from './posts/posts.component';
+import { UserComponent } from './user//user.component';
+import { SearchComponent } from './search/search.component';
 
-export const routes : Route[] = [
+export const routes: Route[] = [
     {
         path: '',
         pathMatch: 'full',
@@ -14,5 +15,8 @@ export const routes : Route[] = [
     }, {
         path: 'user/:id',
         component: UserComponent
+    }, {
+        path: 'search',
+        component: SearchComponent
     }
 ];

@@ -24,8 +24,10 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
-    "fontawesome": "^4.7.2",
     "lodash": "^4.17.5",
+    "ng2-order-pipe": "^0.1.5",
+    "ng2-search-filter": "^0.4.7",
+    "ngx-pagination": "^3.1.1",
     "remove": "^0.1.5",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"

@@ -7,8 +7,11 @@
 
     <nav id="main-nav-wrap">
       <ul class="main-navigation" style="touch-action: pan-y;">
-        <li class="current">
-          <a routerLink="/">Home</a>
+        <li>
+          <a routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="current">Home</a>
+        </li>
+        <li>
+          <a routerLink="/search" routerLinkActive="current">Search</a>
         </li>
       </ul>
     </nav>

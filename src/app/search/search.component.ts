@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiServiceService } from './../service/api-service.service';
 import * as _ from 'lodash';
+
 @Component({
-  selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.css']
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
-export class PostsComponent implements OnInit {
+export class SearchComponent implements OnInit {
   posts: any;
   currentPageNumber = 1;
   recordPerPage = 10;
+  filter = '';
   constructor(public _apiService: ApiServiceService) { }
 
   ngOnInit() {
@@ -18,5 +20,4 @@ export class PostsComponent implements OnInit {
       this.posts = res;
     });
   }
-
 }
